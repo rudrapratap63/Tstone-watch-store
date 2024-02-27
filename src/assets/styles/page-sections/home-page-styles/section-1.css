@@ -1,0 +1,44 @@
+/*!--BELOW---styles for when [data-shadow-content] triggers*/
+.low-brightness {
+  filter: brightness(25%);
+}
+/*!--ABOVE---styles for when [data-shadow-content] triggers*/
+
+.about {
+  background-color: var(--style-color-white);
+}
+
+.about__title {
+  font-size: 1.3rem;
+  font-family: var(--font-family-regular), "Alexandria";
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-top: 2rem;
+  padding: 2rem 1rem 1rem 5%;
+  color: var(--style-color-blue);
+  background: linear-gradient(
+    to right,
+    var(--style-color-offBlack),
+    var(--style-color-darkerBlue),
+    var(--style-color-blue),
+    var(--style-color-blue),
+    var(--style-color-blue)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about__text {
+  font-weight: 100;
+  color: var(--style-color-offBlack);
+  opacity: 0.9;
+  padding: 0 1rem 1rem 5%;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+}
+
+.about__sources--holder {
+  background-color: var(--style-color-darkBrown);
+  border-bottom: 4px solid var(--style-color-darkBrown);
+}

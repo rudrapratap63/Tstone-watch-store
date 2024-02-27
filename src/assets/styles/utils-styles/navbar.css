@@ -1,0 +1,40 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 1rem 0.5rem 1rem;
+  background-color: transparent;
+  list-style: none;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  height: 5rem;
+  width: 100%;
+}
+
+.navbar__items {
+  align-self: flex-end;
+}
+
+.navbar__item {
+  font-size: 1.2rem;
+  color: var(--style-color-white);
+  font-family: Helvetica, sans-serif;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar__open-menu_btn,
+.navbar__search-btn {
+  font-size: 0.7rem;
+}
+
+.navbar__logo {
+  margin-left: 1.5rem;
+}
+
+.navbar__logo img {
+  width: 100%;
+  max-width: 150px;
+  min-width: 100px;
+  height: auto;
+}

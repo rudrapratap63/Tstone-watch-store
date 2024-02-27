@@ -1,0 +1,45 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+@font-face {
+  font-family: "RolexFont-Bold";
+  src: url("../../../../src/assets/fonts/RolexFont-Bold-WebS.woff2")
+    format(woff2);
+}
+
+@font-face {
+  font-family: "RolexFont-Regular";
+  src: url("../../../../src/assets/fonts/RolexFont-Regular-WebS.woff2")
+    format(woff2);
+}
+
+@font-face {
+  font-family: "RolexFont-Light";
+  src: url("../../../../src/assets/fonts/RolexFont-Light-WebS.woff2")
+    format(woff2);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-family: Helvetica, sans-serif;
+  line-height: 1.4;
+  background-color: var(--style-color-darkBrown);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}

@@ -1,0 +1,164 @@
+.search-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--style-color-white);
+  padding: 0.3rem 1rem 0.5rem 1rem;
+  overflow-y: scroll;
+  position: fixed;
+  z-index: 15;
+  top: -1000px;
+  height: 0;
+  width: 100%;
+}
+
+.search-panel--show {
+  top: 0;
+  height: fit-content;
+}
+
+.item-result-container {
+  /*?Display will be set with JS ==> see search-panel.js*/
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-flow: dense;
+  justify-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  width: 100%;
+}
+
+.search-item-result > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.search-item-result > a,
+.item-result__img,
+.item-result__text--holder {
+  border-radius: 1rem;
+}
+
+.search-item-result {
+  display: none;
+  height: auto;
+  max-width: 250px;
+  width: 100%;
+}
+
+.item-result__text--holder {
+  text-align: center;
+  position: relative;
+  z-index: 5;
+  padding: 1rem 0.5rem;
+}
+
+.item-result__img {
+  transition: all 0.5s ease;
+  width: 100%;
+}
+
+.search-item-result:hover .item-result__img {
+  transform: scale(1.1);
+}
+
+.show-results {
+  display: block;
+}
+
+.logo--holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.search-panel__logo {
+  width: 100%;
+  max-width: 120px;
+  min-width: 50px;
+  height: auto;
+}
+
+.search-panel__close_btn {
+  font-size: 1rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 100%;
+  background-color: rgb(250, 250, 250);
+  color: var(--style-color-darkBrown);
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  right: 5%;
+  transform: translateY(-30%), translateX(-50%);
+}
+
+.search-panel__text {
+  text-align: center;
+  font-family: var(--font-family-bold);
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  color: var(--style-color-darkBrown);
+  padding: 2rem 0;
+  margin: 2rem 0;
+}
+
+.search-panel__close_btn:hover {
+  color: var(--style-color-white);
+  background-color: var(--style-color-green);
+}
+.search-bar {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.search-bar__input {
+  background-color: var(--style-color-white);
+  border: none;
+  border-bottom: 1px solid var(--style-color-lightGray);
+  color: var(--style-color-darkBrown);
+  font-size: 1.5rem;
+  padding-left: 0.5rem;
+  width: 70vw;
+}
+
+.search-bar__input::placeholder {
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: var(--style-color-lightGray);
+}
+
+.search-bar__input:focus {
+  outline: none;
+  border-bottom: 1px solid var(--style-color-gray);
+  font-size: 1.5rem;
+}
+
+.search-bar__input:-webkit-autofill,
+.search-bar__input:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--style-color-white);
+  box-shadow: 0 0 0 1000px var(--style-color-white) inset;
+}
+
+.search-bar__submit {
+  font-size: 1.2rem;
+  color: var(--style-color-white);
+  background-color: var(--style-color-green);
+  border: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.search-bar__submit:hover {
+  font-size: 1.1rem; /*?sice it has plus 1px due to border below, remove 1px from font-size so it doesnt move*/
+  background-color: var(--style-color-white);
+  border: 1px solid var(--style-color-green);
+  color: var(--style-color-green);
+}

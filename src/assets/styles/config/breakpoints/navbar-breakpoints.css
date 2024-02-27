@@ -1,0 +1,9 @@
+@media (min-width: 1000px) {
+  .navbar {
+    padding: 0.3rem 2rem 0.4rem 2rem;
+  }
+  .navbar__open-menu_btn,
+  .navbar__search-btn {
+    font-size: 0.9rem;
+  }
+}
