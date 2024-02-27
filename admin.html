@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="high quality watch website" />
+    <meta name="author" content="Emanuel Iturres" />
+    <link
+      rel="icon"
+      href="src/assets/media/img/logo/apple-icon-gold-white.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="src/assets/media/img/logo/apple-icon-black-color.png"
+    />
+    <link rel="stylesheet" href="src/assets/styles/admin-page.css" />
+    <title>The Time Tstone | Admin</title>
+  </head>
+  <body id="top-page">
+    <div class="admin-items modal" data-panel-add-new>
+      <form class="modal-content animate" action="#" data-add-new-item-form>
+        <div class="input--holder" data-add-new-inputs-holder>
+          <!-- inputs will be auto injected -->
+        </div>
+        <div class="btn--holder">
+          <button type="submit" class="save-item">Save</button>
+          <button type="button" class="cancel-new" data-add-new-cancel-btn>
+            Cancel
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="admin-items modal" data-panel-edit>
+      <form class="modal-content animate" action="#" data-edit-item-form>
+        <div class="input--holder" data-edit-inputs-holder>
+          <!-- inputs will be auto injected -->
+        </div>
+        <div class="btn--holder">
+          <button type="submit" class="save-item">Save</button>
+          <button type="button" class="cancel-edit" data-cancel-update-btn>
+            Cancel
+          </button>
+        </div>
+      </form>
+    </div>
+    <nav class="navbar" data-navbar>
+      <div class="navbar__logo btn">
+        <a href="index.html">
+          <img
+            src="src/assets/media/img/logo/tstone-short-logo.png"
+            alt="website logo"
+          />
+        </a>
+      </div>
+    </nav>
+    <div class="new-item-btn--holder">
+      <button class="new-item-btn" data-add-new-item-btn>
+        add new item
+        <i class="fa-solid fa-square-plus fontawesome"></i>
+      </button>
+    </div>
+    <section 1 class="items-grid"></section>
+    <div class="grid__container" data-grid-items-section>
+      <!-- items data will be auto injected -->
+    </div>
+    <footer class="footer">
+      <img
+        src="src/assets/media/img/logo/tstone_logo_withoutLine.png"
+        alt="logo"
+        class="footer__logo"
+      />
+      <a
+        aria-label="go back to top"
+        href="#top-page"
+        class="footer go-top-button btn"
+      >
+        <i class="go-top-button__arrow fa-solid fa-chevron-up"></i>
+      </a>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/5d25a44371.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+      integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="module"
+      src="src/components/admin-page-markup-componenets.js"
+      defer
+    ></script>
+    <script
+      type="module"
+      src="src/admin-controller/admin-controllers.js"
+      defer
+    ></script>
+  </body>
+</html>

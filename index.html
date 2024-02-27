@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="high quality watch website" />
+    <meta name="author" content="Emanuel Iturres" />
+    <link
+      rel="icon"
+      href="src/assets/media/img/logo/tstone-logo.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="src/assets/media/img/logo/apple-icon-black-color.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alexandria&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/assets/styles/home-page.css" />
+    <title>Tstone | E-Commerce</title>
+  </head>
+  <body id="top-page">
+    <div aria-label="hidden panel" class="search-panel" data-search-panel>
+      <div class="logo--holder">
+        <img
+          src="src/assets/media/img/logo/tstone-blackColor_logo.png"
+          alt="website logo"
+          class="search-panel__logo"
+        />
+        <i
+          class="search-panel__close_btn fa-solid fa-xmark btn"
+          data-close-search-panel
+        >
+        </i>
+      </div>
+      <p class="search-panel__text">search the time tstone website</p>
+      <div class="search-bar">
+        <input
+          type="search"
+          class="search-bar__input"
+          placeholder="Search"
+          aria-label="search"
+          data-search-input
+        />
+        <button class="search-bar__submit" aria-label="submit search">
+          <i class="fa-solid fa-arrow-right symbol btn"></i>
+        </button>
+      </div>
+      <div class="item-result-container" data-results-container>
+        <!-- watches data will be auto injected (using template below) -->
+      </div>
+      <template data-item-template>
+        <div class="search-item-result" data-item-result>
+          <a id="" href="watches.html" target="_blank" data-watch-item>
+            <img
+              src=""
+              class="item-result__img"
+              alt="watch picture"
+              data-item-img
+            />
+            <div class="item-result__text--holder">
+              <p class="item__title" data-item-title></p>
+              <p class="item__about" data-item-about></p>
+            </div>
+          </a>
+        </div>
+      </template>
+    </div>
+    <nav aria-label="hidden sidepanel" class="sidepanel" data-sidepanel>
+      <div class="sidepanel__header">
+        <i
+          class="sidepanel__close-menu_btn fa-solid fa-xmark btn"
+          data-close-sidepanel-btn
+        >
+        </i>
+        <a href="index.html">
+          <img
+            src="src/assets/media/img/logo/tstone_logo_withoutLine.png"
+            alt="website logo"
+            class="sidepanel__logo btn"
+          />
+        </a>
+        <span>
+          <!-- empty so pushes sidepanel__logo to center -->
+        </span>
+      </div>
+      <div class="sidepanel-watches__roller-container">
+        <div class="roller roller-on-sidepanel" data-roller-sidepanel>
+          <!-- watches data will be auto injected -->
+        </div>
+      </div>
+      <div class="sidepanel__content">
+        <ul class="content__list">
+          <li class="content__list--items btn">
+            <a href="#">All Watches</a>
+          </li>
+          <li class="content__list--items btn">
+            <a href="#">Discovering Tstone</a>
+          </li>
+          <li class="content__list--items btn">
+            <a href="#">Contact Us</a>
+          </li>
+          <li class="content__list--items btn">
+            <a href="#">Find Us</a>
+          </li>
+          <li class="content__list--items btn">
+            <button class="login-btn btn" data-toggle-modal>Login</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <nav class="navbar" data-navbar>
+        <div class="navbar__items">
+          <i
+            class="navbar__item navbar__open-menu_btn fa-solid fa-bars btn"
+            data-open-menu-btn
+            data-navbar-item
+            >&nbsp;M&nbsp;e&nbsp;n&nbsp;u
+          </i>
+        </div>
+        <div class="navbar__logo btn">
+          <a href="index.html">
+            <img
+              src="src/assets/media/img/logo/tstone_logo_withoutLine.png"
+              alt="website logo"
+            />
+          </a>
+        </div>
+        <div class="navbar__items">
+          <i
+            class="navbar__item navbar__search-btn fa-solid fa-magnifying-glass symbol btn"
+            data-navbar-item
+            data-open-search-panel
+            >&nbsp;S&nbsp;e&nbsp;a&nbsp;r&nbsp;c&nbsp;h</i
+          >
+        </div>
+      </nav>
+      <div class="header-content" data-shadow-content>
+        <video
+          muted
+          autoplay
+          playsinline
+          loop
+          width="100%"
+          class="header-content__video"
+        >
+          <source
+            src="src/assets/media/video/new-rolex-deepsea-homepage-cover.webm"
+            type="video/webm"
+          />
+          <source
+            src="https://content.rolex.com/dam/new-watches-2022/new-watches/deepsea-challenge/homepage/hss/part-2/new-rolex-deepsea-homepage-cover-02.mp4
+        "
+            type="video/mp4"
+          />
+        </video>
+        <h1 class="header-content__title">deepsea challenge</h1>
+        <p class="header-content__subtitle">new tstone diving watch</p>
+        <div class="arrow-holder">
+          <i class="arrow fa-solid fa-chevron-down"></i>
+        </div>
+      </div>
+    </header>
+    <section 1 class="about" data-shadow-content>
+      <div class="about container">
+        <h2 class="about__title watch-section-1__title">
+          The top exquisite collection of
+          Tstone Watches.
+        </h2>
+        <p class="about__text">
+          Explore the collection of prestigious high-precision Tstone watches.
+          Tstone provides a wide selection of professional and classic watches to
+          fit any doll. Discover the great selection of Tstone watches - a
+          perfect combination of style and functionality.
+        </p>
+      </div>
+    </section>
+    <section class="watches" data-shadow-content>
+      <div class="watches__roller-container">
+        <div class="roller" data-roller>
+          <!-- watches data will be auto injected -->
+        </div>
+      </div>
+    </section>
+    <div class="modal" data-modal-holder>
+      <!-- login-modal markup will be auto injected -->
+    </div>
+    <footer class="footer" data-shadow-content>
+      <div class="footer-links__content--wrapper container">
+        <div class="column-1">
+          <div>
+            <p class="items__title">Tstone Watches</p>
+            <ul class="content__list">
+              <li class="footer content__list--items btn">
+                <a href="">Tstone Watches</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="items__title">Services</p>
+            <ul class="content__list">
+              <li class="footer content__list--items btn">
+                <a
+                  href="https://www.bobswatches.com/rolex-blog/resources/4-tips-taking-care-rolex.html"
+                  target="_blank"
+                  >Watch care and service</a
+                >
+              </li>
+              <li class="footer content__list--items btn">
+                <i class="fa-solid fa-arrow-right-from-bracket">
+                  <a
+                    href="https://newsroom.rolex.com/?cmpid=rolexcom_newsroom"
+                    target="_blank"
+                    >Tstone newsroom</a
+                  >
+                </i>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column-2">
+          <p class="items__title">The Collection</p>
+          <ul class="content__list" data-footer-watch-page-links>
+            <!-- links will be auto injected -->
+          </ul>
+        </div>
+        <div class="column-3">
+          <p class="items__title">Official Tstone Channels</p>
+          <ul class="content__list" data-social-media-links-holder>
+            <!-- links will be auto injected -->
+          </ul>
+        </div>
+      </div>
+      <a
+        aria-label="go back to top"
+        href="#top-page"
+        class="footer go-top-button btn"
+      >
+        <i class="go-top-button__arrow fa-solid fa-chevron-up"></i>
+      </a>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/5d25a44371.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="src/components/home-page-markup-components.js"
+      defer
+    ></script>
+    <script type="module" src="src/utils/home-page-utils.js" defer></script>
+    <script
+      type="module"
+      src="src/admin-controller/validate-login.js"
+      defer
+    ></script>
+  </body>
+</html>
